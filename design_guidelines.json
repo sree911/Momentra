@@ -1,0 +1,114 @@
+{
+  "brand": {
+    "name": "Momentra",
+    "tagline": "Capture your moments instantly.",
+    "description": "Professional freelance videography with reels delivered within minutes.",
+    "tone": "Cinematic, Luxury, Professional, Modern, Instant"
+  },
+  "theme": {
+    "mode": "dark",
+    "background": "bg-gradient-to-br from-[#0f0202] via-[#2a0a0a] to-[#450a0a]",
+    "accent_color": "#DC2626",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A3A3A3"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "weights": ["400", "700"],
+      "usage": "All section titles, hero text, brand name"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Paragraphs, buttons, inputs, labels"
+    }
+  },
+  "colors": {
+    "palette": {
+      "deep_red": "#450a0a",
+      "bright_red": "#DC2626",
+      "black_overlay": "rgba(0, 0, 0, 0.7)",
+      "glass_bg": "rgba(255, 255, 255, 0.05)",
+      "glass_border": "rgba(255, 255, 255, 0.1)"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #1a0505 0%, #2a0a0a 50%, #450a0a 100%)",
+      "card_hover": "linear-gradient(180deg, rgba(220, 38, 38, 0.1) 0%, rgba(0, 0, 0, 0) 100%)"
+    }
+  },
+  "layout_strategies": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_padding": "py-24",
+      "element_gap": "gap-8"
+    },
+    "grid": {
+      "bento": "grid grid-cols-1 md:grid-cols-3 gap-6",
+      "pricing": "grid grid-cols-1 md:grid-cols-3 gap-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-red-700 hover:bg-red-600 text-white px-8 py-3 rounded-full transition-all duration-300 font-medium tracking-wide shadow-lg shadow-red-900/20",
+      "secondary": "bg-transparent border border-white/20 hover:border-white text-white px-8 py-3 rounded-full transition-all duration-300 backdrop-blur-sm"
+    },
+    "cards": {
+      "base": "bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden",
+      "pricing": "flex flex-col h-full bg-gradient-to-b from-white/5 to-transparent border border-white/10 rounded-3xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300"
+    },
+    "inputs": {
+      "style": "bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-red-500 transition-colors w-full",
+      "label": "block text-sm font-medium text-gray-400 mb-2"
+    },
+    "navigation": {
+      "bar": "fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-xl border-b border-white/5",
+      "link": "text-sm font-medium text-gray-300 hover:text-white transition-colors"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-black/30 border border-white/10",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+    "glows": "drop-shadow-[0_0_15px_rgba(220,38,38,0.5)]"
+  },
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -20 },
+      "transition": { "duration": 0.5, "ease": "easeOut" }
+    },
+    "hover_scale": {
+      "scale": 1.02,
+      "transition": { "duration": 0.2 }
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1497914809399-6a2d7486bf8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxjaW5lbWF0aWMlMjB2aWRlb2dyYXBoeSUyMGNhbWVyYSUyMGRhcmslMjByZWR8ZW58MHx8fHwxNzcyODE1OTY2fDA&ixlib=rb-4.1.0&q=85",
+      "about_bg": "https://images.unsplash.com/photo-1497809750169-a1f3e2b7d06c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxjaW5lbWF0aWMlMjB2aWRlb2dyYXBoeSUyMGNhbWVyYSUyMGRhcmslMjByZWR8ZW58MHx8fHwxNzcyODE1OTY2fDA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": "lucide-react"
+  },
+  "instructions_to_main_agent": [
+    "Use 'Playfair Display' for all Headings to achieve the cinematic look.",
+    "Ensure the background is always the deep red gradient pattern defined in 'theme.background'.",
+    "Do NOT use pure black background. Use the gradient.",
+    "Use 'lucide-react' for the camera icon above 'Mo' in Momentra.",
+    "Implement smooth scrolling and page transitions using framer-motion.",
+    "Forms must submit to the backend API which stores data in MongoDB.",
+    "Ensure the layout is fully responsive, stacking grids on mobile.",
+    "Add a subtle noise texture overlay if possible for film grain effect.",
+    "Use 'sonner' for all toast notifications (success/error messages)."
+  ],
+  "UNIVERSAL_GUIDELINES": {
+    "design_philosophy": "Fusion over Imitation. Emotion First. Content is King.",
+    "anti_patterns": [
+      "No purple or teal for CTAs (Use Red/White).",
+      "No Center-Everything layouts (Use asymmetry).",
+      "No Gradient Overload (Use texture/noise)."
+    ],
+    "spacing": "Generous spacing. Use p-8, p-12, p-16.",
+    "accessibility": "Ensure text contrast meets WCAG AA standards."
+  }
+}
